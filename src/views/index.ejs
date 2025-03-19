@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1><%= locals.title %></h1>
+        <% locals.messages.forEach((message) => { %>
+            <div style="display: flex; flex-direction: column; margin-top: 20px;">
+                <span><%= message.user %></span>
+                <span><%= message.text %></span>
+                <span><%= message.added %></span>
+            </div>
+        <% }) %>
+    </body>
+</html>
