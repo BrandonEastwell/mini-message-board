@@ -1,5 +1,6 @@
 <html>
-    <body>
+    <body style="margin: auto; display: flex; flex-direction: column; place-items: center;">
+        <%- include('form') %>
         <h1><%= locals.title %></h1>
         <% locals.messages.forEach((message) => { %>
             <div style="display: flex; flex-direction: column; margin-top: 20px;">
